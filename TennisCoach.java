@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 //bean id someSillyCoach
 @Component("someSillyCoach")
+//if you want spring to use the default id use @Component
 public class TennisCoach implements Coach {
 
 	@Override
