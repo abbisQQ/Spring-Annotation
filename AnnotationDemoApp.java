@@ -14,7 +14,9 @@ public class AnnotationDemoApp {
 				
 				//Load the beans from spring container using the bean id
 				Coach theCoach = context.getBean("someSillyCoach",Coach.class);
-				
+				//in case you want to use the default id the above line will be 
+				//Coach theCoach = context.getBean("tennisCoach",Coach.class);
+				//we use the class name TennisCoach but with the first letter lower case
 				System.out.println(theCoach.getDailyWorkOut());
 		
 	}
